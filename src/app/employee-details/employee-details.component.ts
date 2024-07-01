@@ -3,11 +3,20 @@ import {Employee} from "../models/employee";
 import {EmployeeService} from "../services/employee.service";
 import {ActivatedRoute} from "@angular/router";
 import {Location} from "@angular/common";
+import {animate, style, transition, trigger} from "@angular/animations";
 
 @Component({
   selector: 'app-employee-details',
   templateUrl: './employee-details.component.html',
-  styleUrls: ['./employee-details.component.css']
+  styleUrls: ['./employee-details.component.css'],
+  animations: [
+    trigger('cardAnimation', [
+      transition(':enter', [
+        style({ opacity: 0, transform: 'translateY(-20px)' }),
+        animate('300ms ease-out', style({ opacity: 1, transform: 'translateY(0)' })),
+      ]),
+    ]),
+  ],
 })
 export class EmployeeDetailsComponent implements OnInit{
 
