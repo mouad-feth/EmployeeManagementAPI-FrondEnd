@@ -1,0 +1,19 @@
+.container {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+button {
+  margin-right: 10px;
+}
+
+.mat-elevation-z8 {
+  margin-top: 15px;
+}
+
+.container button:not(:last-child) {
+  margin-right: 15px;
+}
