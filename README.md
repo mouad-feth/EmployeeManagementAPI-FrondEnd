@@ -1,27 +1,36 @@
-# MyNewApp
+# Employee Management Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
+## Overview
 
-## Development server
+The Employee Management Frontend is a single-page application (SPA) built using Angular. It provides a user-friendly interface for managing employee data, supporting CRUD (Create, Read, Update, Delete) operations by communicating with the Employee Management API.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Key Features
 
-## Code scaffolding
+- **Employee List**: Display all employees with basic information.
+- **Employee Details**: View detailed information about a specific employee.
+- **Add Employee**: Form to create a new employee record.
+- **Edit Employee**: Form to update existing employee details.
+- **Delete Employee**: Functionality to remove an employee.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technologies Used
 
-## Build
+- **Angular**: Frontend framework for building the SPA.
+- **Angular Material**: UI component library for responsive design.
+- **TypeScript**: Superset of JavaScript adding static types.
+- **HTML5 & CSS3**: Markup and styling for the application.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Project Structure
 
-## Running unit tests
+### Components
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **EmployeeListComponent**: Displays a list of employees.
+- **EmployeeDetailComponent**: Shows detailed information for a specific employee.
+- **EmployeeFormComponent**: Form for creating and editing employees.
 
-## Running end-to-end tests
+### Services
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **EmployeeService**: Handles communication with the Employee Management API, including methods for fetching, creating, updating, and deleting employees.
 
-## Further help
+### Routing
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- **AppRoutingModule**: Configures routes for the application, mapping URL paths to components.
